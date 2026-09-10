@@ -2,7 +2,7 @@
   "name": "velo",
   "private": true,
   "version": "0.1.0",
-  "description": "Velo — anonymous cash liquidity on Stellar, by Nullifier Systems",
+  "description": "Velo \u2014 anonymous cash liquidity on Stellar, by Nullifier Systems",
   "license": "Apache-2.0",
   "workspaces": [
     "apps/*",
@@ -10,15 +10,15 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
+    "dev": "node init && turbo run dev",
+    "build": "node init && turbo run build",
     "lint": "turbo run lint",
     "test": "npm run test:localization && turbo run test",
     "test:localization": "node --test scripts/validate-localization.test.mjs",
     "localization:check": "node scripts/validate-localization.mjs",
-    "dev:api": "npm run dev -w apps/api",
-    "dev:frontend": "npm run dev -w mobile/frontend",
-    "dev:backend": "npm run dev -w mobile/backend",
+    "dev:api": "node init && npm run dev -w apps/api",
+    "dev:frontend": "node init && npm run dev -w mobile/frontend",
+    "dev:backend": "node init && npm run dev -w mobile/backend",
     "post-deploy-check": "npm run post-deploy-check -w apps/api",
     "bot:refund": "tsx scripts/refund-bot.ts",
     "test:load": "node scripts/run-load-test.js"
