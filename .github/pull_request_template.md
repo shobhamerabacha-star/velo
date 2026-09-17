@@ -1,13 +1,12 @@
-## Summary
+## Description
 
-Describe the change and its motivation.
+Closes # (issue)
 
-## Testing
-
-List the commands used to validate the change.
+## Type of change
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Documentation update
 
 ## Checklist
-
-- [ ] I read the contributing guide.
-- [ ] I added or updated relevant documentation.
-- [ ] I verified the change with the relevant tests or builds.
+- [ ] I have tested this code locally
+- [ ] I have read the contributing guidelines
